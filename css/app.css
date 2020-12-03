@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+::-webkit-input-placeholder {color:#000;font-size:11px;font-weight:700}
+::-moz-placeholder {color:#000;font-size:11px;font-weight:700}
+:-ms-input-placeholder {color:#000;font-size:11px;font-weight:700}
+::-ms-input-placeholder {color:#000;font-size:11px;font-weight:700}
+::placeholder {color:#000;font-size:11px;font-weight:700}
+body {
+  background:#000 url(../images/dest/background.png);
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  color:#282828;
+  font-family:Arimo;
+  font-size:14px;
+  line-height:19px;
+  padding:50px 30px
+}
+a {color:#7878f6;text-decoration:underline}
+a::hover {text-decoration:none}
+.wrapper {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  background-color:#fff;
+  margin:0 auto;
+  border-radius:6px;
+  min-height:618px
+}
+main {
+  height:-webkit-fit-content;
+  height:-moz-fit-content;
+  height:fit-content;
+  -ms-flex-item-align:center;
+  -ms-grid-row-align:center;
+  align-self:center
+}
+main.col {padding:70px 45px}
+.step {opacity:0;-webkit-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}
+.step.opacity-in {opacity:1}
+.progress {font-size:16px;line-height:21px;margin-bottom:30px}
+.progress span {font-size:18px;font-weight:700;color:#7878f6;padding-left:2px}
+.progress ul {margin:0;margin-top:15px;margin-left:-15px;padding:0;list-style:none}
+.progress ul li {opacity:.34;-webkit-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}
+.progress ul li.active-li {opacity:1}
+.progress ul li::before {display:inline-block;content:'';background-color:#7878f6;height:6px;width:100%;border-radius:3px}
+.title {font-family:Montserrat;font-size:22px;line-height:32px;font-weight:700;margin-bottom:50px}
+.image {min-height:165px}
+.image img {display:block;max-width:100%;margin:0 auto;padding:30px 0}
+.radio-group {text-align:center}
+.button {margin-top:60px;text-align:center}
+.button .btn-next {
+  background-color:#7878f6;
+  color:#fff;
+  font-weight:500;
+  padding:8px 30px;
+  border:none;
+  opacity:1;
+  -webkit-transition:all .5s ease-out;
+  -o-transition:all .5s ease-out;
+  transition:all .5s ease-out;
+}
+.button .btn-next:hover {opacity:.7}
+.button .btn-next:disabled {cursor:not-allowed}
+.step3 .answer {margin:0 auto}
+.step3 .answer input {width:100%;margin-top:5px;padding:10px;border:none;border-bottom:1px solid #7878f6}
+.step4 {font-weight:700;text-align:center;line-height:32px}
+.step4 .big-string{font-size:36px;margin-bottom:70px}
+.step4 .small-string{font-size:22px}
+aside {background-color:#7878f6;padding:70px 30px;border-radius:0 6px 6px 0;position:relative}
+aside.col-3 {padding-left:30px;padding-right:30px}
+.logo {margin-bottom:20px}
+.logo div {background-color:#fff;line-height:58px;border-radius:50%;display:inline-block;height:60px;width:60px;text-align:center;margin-right:15px}
+.logo span {color:#fff;text-transform:uppercase;font-weight:700}
+.notice {background-color:#fff;padding:30px 20px;border-radius:20px;position:relative}
+.notice:before {display:block;width:20px;height:20px;content:'';background-color:#fff;position:absolute;top:-4px;left:20px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+.step-bottom {bottom:70px;position:absolute;color:#fff}
+.step-bottom .step-first-string{font-size:18px;font-weight:700}
+input[type=checkbox],input[type=radio] {display:none}
+label {cursor:pointer} 
+label:before {display:inline-block;content:'';width:12px;height:12px;-webkit-box-shadow:0 0 0 1px rgba(0,0,0,.4);box-shadow:0 0 0 1px rgba(0,0,0,.4);cursor:pointer;background-color:rgba(120,120,246,.34);margin-right:8px}
+label.radio:before{border-radius:50%}
+input:checked+label:before{background-color:#7878f6;border:1px solid #fff}
+
+@media (max-width:992px) {
+  aside {display:none}
+}
