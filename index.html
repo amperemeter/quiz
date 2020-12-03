@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css"> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <div class="wrapper container">
+  <!-- wrapper start-->
+  <div class="row">
+  <main class="col">
+    <div class="progress">
+      <div>Готово: <span><span id="percent"></span>%</span></div>
+      <ul class="row"> 
+       <li class="col-4 active-li"></li>
+       <li class="col-4"></li>
+       <li class="col-4"></li>
+      </ul>
+    </div>
+    <!-- Блок с вопросами -->
+    <div class="questions">
+      <!-- Шаг первый -->
+      <div class="step step1 opacity-in">
+        <div class="title">Выберите сборщик проектов, которым Вы используете:</div>
+        <div class="answer row">
+        <div class="radio-group col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="image"><img src="images/dest/gulp.png"></div>
+          <input type="radio" class="radio" id="radioChoice1" name="radio" value="Gulp">
+          <label for="radioChoice1" class="radio active-radio">Gulp11</label>
+        </div>      
+        <div class="radio-group col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="image"><img src="images/dest/webpack.png"></div>
+          <input type="radio" class="radio" id="radioChoice2" name="radio" value="Webpack">
+          <label for="radioChoice2" class="radio">Webpack</label>
+        </div>
+        <div class="radio-group col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="image"><img src="images/dest/grunt.png"></div>
+          <input type="radio" class="radio" id="radioChoice3" name="radio" value="Grunt">
+          <label for="radioChoice3" class="radio">Grunt</label>
+        </div>
+        <div class="radio-group col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="image"><img src="images/dest/parsel.png"></div>
+          <input type="radio" class="radio" id="radioChoice4" name="radio" value="Parcel">
+          <label for="radioChoice4" class="radio">Parcel</label>
+        </div>                        
+        </div>
+         <div class="button"><button class="btn-next" type="submit">Следующий шаг</button></div>
+      </div>
+      <!-- Конец первого шага-->
+      
+      <!-- Шаг второй -->
+      <div class="step step2">
+        <div class="title">Перечислите практические навыки</div>
+        <div class="answer row">
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice1" name="checkbox" value="Методология БЭМ">      
+            <label for="checkboxChoice1" class="checkbox active-checkbox">Методология БЭМ</label>
+          </div>
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice2" name="checkbox" value="LESS">      
+            <label for="checkboxChoice2" class="checkbox">LESS</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice3" name="checkbox" value="Верстка рассылок">      
+            <label for="checkboxChoice3" class="checkbox">Верстка рассылок</label>
+          </div>                    
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice4" name="checkbox" value="JQuery">      
+            <label for="checkboxChoice4" class="checkbox active-checkbox">JQuery</label>
+          </div>
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice5" name="checkbox" value="SVG">      
+            <label for="checkboxChoice5" class="checkbox">SVG</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice6" name="checkbox" value="Верстка без макета">      
+            <label for="checkboxChoice6" class="checkbox">Верстка без макета</label>
+          </div>
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice7" name="checkbox" value="HAML">      
+            <label for="checkboxChoice7" class="checkbox">HAML</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice8" name="checkbox" value="Canvas">      
+            <label for="checkboxChoice8" class="checkbox">Canvas</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice9" name="checkbox" value="GIT">      
+            <label for="checkboxChoice9" class="checkbox">GIT</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice10" name="checkbox" value="PUG">      
+            <label for="checkboxChoice10" class="checkbox">PUG</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice11" name="checkbox" value="Stylus">      
+            <label for="checkboxChoice11" class="checkbox">Stylus</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice12" name="checkbox" value="Верстка под iOS">      
+            <label for="checkboxChoice12" class="checkbox">Верстка под iOS</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice13" name="checkbox" value="SCSS">      
+            <label for="checkboxChoice13" class="checkbox">SCSS</label>
+          </div> 
+          <div class="checkbox-group col-sm-4 col-12">
+            <input type="checkbox" class="checkbox" id="checkboxChoice14" name="checkbox" value="Адаптивная верстка">      
+            <label for="checkboxChoice14" class="checkbox">Адаптивная верстка</label>
+          </div>     
+         </div>  
+        <div class="button"><button class="btn-next" type="submit">Следующий шаг</button></div>
+      </div>
+      <!-- Конец второго шага-->  
+      
+      <!-- Шаг третий -->
+      <div class="step step3"> 
+        <div class="title">Заполните информацию о себе</div>
+        <div class="answer col col-md-6">  
+          <input type="text" id="person-name" name="name" value="" placeholder="Полное ФИО">
+          <input type="text" id="person-year" name="year" value="" placeholder="Год рождения">
+          <input type="text" id="person-city" name="city" value="" placeholder="Место жительства">
+          <input type="text" id="person-telegram" name="telegram" value="" placeholder="Телеграмм">
+          <div class="button"><button class="btn-next" type="submit">Следующий шаг</button></div>                       
+        </div> 
+      </div>
+      <!-- Конец третьего шага-->             
+    </div> 
+    
+     <!-- Сообщение в конце -->
+      <div class="step step4">
+        <div class="big-string">Спасибо!</div>
+        <div class="small-string">Упакуйте работу в *zip и отправьте на почту<br><a href="mailto:vskuzmin28@gmail.com">vskuzmin28@gmail.com</a></div>
+      </div>
+    <!-- Конец сообщения в конце --> 
+    
+  </main>
+  <aside class="col-3 d-none d-lg-block">
+    <div class="logo"><div><img src="images/dest/logo.png"></div><span>Вайскод</span></div>
+    <div class="notice"></div> 
+    <div class="step-bottom">
+      <div class="step-first-string">Шаг <span></span></div>
+      <div class="step-last-string">Осталось шагов <span></span></div>
+    </div>     
+  </aside>
+  
+  </div>
+  <!-- row end-->
+  </div>
+  <!-- wrapper end-->
+    
+    
+  <script src="js/app.js"></script>
+</body>
+</html>
