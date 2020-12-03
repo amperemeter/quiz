@@ -42,12 +42,12 @@ main {
 main.col {padding:70px 45px}
 .step {opacity:0;-webkit-transition:all .5s ease-out;-o-transition:all .5s ease-out;transition:all .5s ease-out}
 .step.opacity-in {opacity:1}
-.progress {font-size:16px;line-height:21px;margin-bottom:30px}
-.progress span {font-size:18px;font-weight:700;color:#7878f6;padding-left:2px}
-.progress ul {margin:0;margin-top:15px;margin-left:-15px;padding:0;list-style:none}
-.progress ul li {opacity:.34;-webkit-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}
-.progress ul li.active-li {opacity:1}
-.progress ul li::before {display:inline-block;content:'';background-color:#7878f6;height:6px;width:100%;border-radius:3px}
+.quiz-progres {font-size:16px;line-height:21px;margin-bottom:30px}
+.quiz-progres span {font-size:18px;font-weight:700;color:#7878f6;padding-left:2px}
+.quiz-progres ul {margin:0;margin-top:15px;margin-left:-15px;padding:0;list-style:none}
+.quiz-progres ul li {opacity:.34;-webkit-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}
+.quiz-progres ul li.active-li {opacity:1}
+.quiz-progres ul li::before {display:inline-block;content:'';background-color:#7878f6;height:6px;width:100%;border-radius:3px}
 .title {font-family:Montserrat;font-size:22px;line-height:32px;font-weight:700;margin-bottom:50px}
 .image {min-height:165px}
 .image img {display:block;max-width:100%;margin:0 auto;padding:30px 0}
