@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const questionItems = document.querySelectorAll('.step'),
         btnsNext = document.querySelectorAll('.btn-next'),
         progress = document.getElementById('percent'),
-        lines = document.querySelectorAll('.progress ul li'),
+        lines = document.querySelectorAll('.quiz-progress ul li'),
         notice = document.querySelector('.notice'),
         stepFirstString = document.querySelector('.step-first-string span'),
         stepLastString = document.querySelector('.step-last-string span'),
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
        lines[btnIndex + 1].classList.add('active-li');
        setTimeout(() => notice.textContent = 'Осталось еще немного. Заполните информацию о себе.', 500); 
       } else if (questionItems[3].style.display == 'block') {  
-       document.querySelector('.progress').style.display = 'none';
+       document.querySelector('.quiz-progress').style.display = 'none';
        document.querySelector('aside').style.display = 'none';
       }   
          
